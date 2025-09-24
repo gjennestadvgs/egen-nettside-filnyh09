@@ -1,3 +1,10 @@
+body {
+   margin: 0;
+   box-sizing: border-box;
+}
+* {
+    font: verdana, sans-serif;
+}
 h1 {
     text-align: center;
     font-size: 300%;
@@ -6,8 +13,8 @@ h1 {
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
-/* The code for centering the navigation list was made by AI */
-.navigation_list {
+/* The code for centering the menu list was made by AI */
+.menu_list {
     list-style-type: none;
     border-radius: 10px;
     padding: 20px;
@@ -16,7 +23,7 @@ h1 {
     width: fit-content;
     background-color: rgb(100,120,200);
 }
-li a {
+.menu_list li a {
     display: block;
     color: rgb(255,232,117);
     background-color: rgb(100,120,200);
@@ -28,7 +35,7 @@ li a {
     border-radius: 100px;
     transition: background-color 2.2s, border-radius 10s;
 }
-li a:hover {
+.menu_list li a:hover {
     background-color: rgb(110, 210, 90);
     border-radius: 10px;
     transition: background-color 0.9s, border-radius 0.5s;
@@ -41,4 +48,46 @@ li a:hover {
     57% {color: rgb(255,0,255);}
     71% {color: rgb(0,255,255);}
     100% {color: rgb(255,0,0);}
+}
+.nav_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+}
+.nav_list li a {
+    display: block;
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+.nav_list li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    border-radius: 20px;
+}
+.active {
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 5px;
+}
+.project_description {
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+}
+.project_description_box {
+    clear: right;
+    float: left;
+    border-radius: 10px;
+    background-color: red;
+    padding: 10px;
+    width: fit-content;
+    height: 282px;
 }
