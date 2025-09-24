@@ -1,3 +1,44 @@
 h1 {
-    align: center;
+    text-align: center;
+    font-size: 300%;
+    -webkit-text-stroke: 2px black;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+/* The code for centering the navigation list was made by AI */
+.navigation_list {
+    list-style-type: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px auto;
+    text-align: center;
+    width: fit-content;
+    background-color: rgb(100,120,200);
+}
+li a {
+    display: block;
+    color: rgb(255,232,117);
+    background-color: rgb(100,120,200);
+    padding: 4px 10px;
+    font-size:250%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 150%;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 2.2s, border-radius 10s;
+}
+li a:hover {
+    background-color: rgb(110, 210, 90);
+    border-radius: 10px;
+    transition: background-color 0.9s, border-radius 0.5s;
+}
+@keyframes example {
+    0% {color: rgb(255,0,0);}
+    15% {color: rgb(0, 255, 0);}
+    29% {color: rgb(255,255,0);}
+    43% {color: rgb(0,0,255);}
+    57% {color: rgb(255,0,255);}
+    71% {color: rgb(0,255,255);}
+    100% {color: rgb(255,0,0);}
 }
