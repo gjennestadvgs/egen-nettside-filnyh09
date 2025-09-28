@@ -13,15 +13,25 @@ h1 {
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
-/* The code for centering the menu list was made by AI */
+/* the code for positioning the menu list was made by AI */
 .menu_list {
     list-style-type: none;
     border-radius: 10px;
     padding: 20px;
-    margin: 0px auto;
+    position: relative; /* Add position relative */
+    left: 50%; /* Position the left edge at the center */
+    transform: translateX(-50%); /* Shift the element left by half its own width */
     text-align: center;
     width: fit-content;
+    margin-top: auto;
     background-color: rgb(100,120,200);
+    transition: transform 0.5s, left 0.5s; /* Transition transform and left */
+}
+#info[open] + .menu_list {
+    left: 25%; /* Adjust left position */
+    transform: translateX(-50%); /* Keep it centered on the new left position */
+    margin-top: -4%; /* Add margin to push it down */
+
 }
 .menu_list li a {
     display: block;
@@ -90,4 +100,12 @@ h1 {
     padding: 10px;
     width: fit-content;
     height: 282px;
+}
+#info {
+    text-align: left;
+    margin-left: 63%;
+    margin-top: 0%;
+}
+#info[open] {
+    margin-left: 40%;
 }
