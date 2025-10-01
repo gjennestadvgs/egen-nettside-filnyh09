@@ -36,7 +36,7 @@ h1 {
 #info[open] + .menu_list {
     left: 25%; /* Adjust left position */
     transform: translateX(-50%); /* Keep it centered on the new left position */
-    margin-top: -5%; /* Add margin to push it down */
+    margin-top: -15.4%; /* Add margin to push it down */
 
 }
 .menu_list li a {
