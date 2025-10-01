@@ -3,7 +3,7 @@ body {
    box-sizing: border-box;
 }
 * {
-    font: verdana, sans-serif;
+    font: arial, sans-serif, verdana, helvetica;
 }
 h1 {
     text-align: center;
@@ -30,14 +30,14 @@ h1 {
 #info[open] + .menu_list {
     left: 25%; /* Adjust left position */
     transform: translateX(-50%); /* Keep it centered on the new left position */
-    margin-top: -4%; /* Add margin to push it down */
+    margin-top: -5%; /* Add margin to push it down */
 
 }
 .menu_list li a {
     display: block;
     color: rgb(255,232,117);
     background-color: rgb(100,120,200);
-    padding: 4px 10px;
+    padding: 15px 10px;
     font-size:250%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 150%;
@@ -105,7 +105,17 @@ h1 {
     text-align: left;
     margin-left: 63%;
     margin-top: 0%;
+    cursor: help;
+    transition: margin-left 0.5s;
 }
 #info[open] {
     margin-left: 40%;
+    background-color: rgb(194, 67, 122);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contact_table, .contact_table td, .contact_table th {
+    background-color: #04AA6D;
+    border-radius: 10px;
 }
