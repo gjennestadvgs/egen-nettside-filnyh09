@@ -1,6 +1,12 @@
 body {
    margin: 0;
    box-sizing: border-box;
+   background-color: light-dark(var(--white), var(--black));
+}
+:root {
+    color-scheme: light dark;
+    --white: #ffffff;
+    --black: #2f2f2f;
 }
 * {
     font: arial, sans-serif, verdana, helvetica;
@@ -8,7 +14,7 @@ body {
 h1 {
     text-align: center;
     font-size: 300%;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px light-dark(black, white);
     animation-name: example;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -64,7 +70,7 @@ h1 {
     margin: 0;
     padding: 0;
     width: 130px;
-    background-color: #f1f1f1;
+    background-color: light-dark(#e4e4e4, #5e5e5e);
     position: fixed;
     top: 0;
     height: 100%;
@@ -72,12 +78,12 @@ h1 {
 }
 .nav_list li a {
     display: block;
-    color: #000;
+    color: light-dark(#000, #f1f1f1);
     padding: 8px 20px;
     text-decoration: none;
 }
 .nav_list li a:hover:not(.active) {
-    background-color: #555;
+    background-color: light-dark(#757575, #444);
     color: white;
     border-radius: 20px;
 }
@@ -118,6 +124,10 @@ h1 {
 .contact_table, .contact_table td, .contact_table th {
     background-color: #04AA6D;
     border-radius: 10px;
+}
+.contact_table td a {
+    color: light-dark(black, white);
+    text-decoration: underline;
 }
 #me_pic {
     width: 200px;
